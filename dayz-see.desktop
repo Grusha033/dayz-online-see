@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DayZ Online See
+Comment=DayZ Server Monitor TUI
+Path=/home/grusha/.local/bin/DayzOnlineSee
+Exec=kitty -e /home/grusha/.local/bin/DayzOnlineSee/linux-run.sh
+Icon=/home/grusha/.local/bin/DayzOnlineSee/icon.png
+Terminal=false
+Categories=Game;Utility;
+Keywords=dayz;server;tracker;
