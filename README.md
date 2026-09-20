@@ -13,7 +13,7 @@ It displays live player counts, renders daily online history charts, and auto-re
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Grusha033/DayzOnlineSee.git
+   git clone https://github.com/Grusha033/dayz-online-see.git
    cd DayzOnlineSee
    ```
 
