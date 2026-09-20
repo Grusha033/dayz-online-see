@@ -12,20 +12,20 @@ windows-curses (Windows only, installed automatically)
 **Quick Start**
 ------------------------------
 Clone the repository:
-git clone https://github.com/Grusha033/DayzOnlineSee.git
-cd DayzOnlineSee
+\ngit clone https://github.com/Grusha033/DayzOnlineSee.git
+\ncd DayzOnlineSee
 ------------------------------
 
 ------------------------------
 Linux
-chmod +x linux-run.sh
-./linux-run.sh
+\nchmod +x linux-run.sh
+\n./linux-run.sh
 ------------------------------
 
 ------------------------------
 Windows
-Run:
-windows-run.bat
+\nRun:
+\nwindows-run.bat
 ------------------------------
 
 Launchers automatically set up .venv and install missing dependencies.
