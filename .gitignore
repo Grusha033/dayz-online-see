@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+stats.json
+settings.json
+history.json
+.venv/
+__pycache__/
+*.pyc
+stats.json
+settings.json
+history.json

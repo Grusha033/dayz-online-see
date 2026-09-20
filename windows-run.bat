@@ -10,13 +10,17 @@ if errorlevel 1 (
 )
 
 if not exist ".venv" (
-    echo Setting up environment, please wait...
+    echo Creating virtual environment...
     python -m venv .venv
-    call .venv\Scripts\activate.bat
-    python -m pip install --upgrade pip >nul 2>&1
-    python -m pip install python-a2s windows-curses >nul 2>&1
-) else (
-    call .venv\Scripts\activate.bat
 )
 
-python see.py
+.venv\Scripts\python.exe -c "import a2s, curses" >nul 2>&1
+if errorlevel 1 (
+    echo Installing missing dependencies...
+    .venv\Scripts\python.exe -m pip install python-a2s windows-curses
+)
+
+.venv\Scripts\python.exe see.py
+if errorlevel 1 (
+    pause
+)

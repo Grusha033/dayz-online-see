@@ -7,9 +7,12 @@ if ! command -v python3 &> /dev/null; then
 fi
 
 if [ ! -d ".venv" ]; then
-    echo "First run detected, setting up environment..."
+    echo "Creating virtual environment..."
     python3 -m venv .venv
-    .venv/bin/python -m pip install --upgrade pip >/dev/null 2>&1
+fi
+
+if ! .venv/bin/python -c "import a2s" &> /dev/null; then
+    echo "Installing missing dependencies..."
     .venv/bin/python -m pip install python-a2s
 fi
 
