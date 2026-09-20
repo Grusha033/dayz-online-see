@@ -9,31 +9,23 @@ Python 3.10+
 python-a2s (installed automatically)
 windows-curses (Windows only, installed automatically)
 
-------------------------------
 **Quick Start**
------------------------------
 Clone the repository:
 git clone https://github.com/Grusha033/DayzOnlineSee.git
 cd DayzOnlineSee
 
 
-------------------------------
 **Linux**
-------------------------------
-\nchmod +x linux-run.sh
-\n./linux-run.sh
+chmod +x linux-run.sh
+./linux-run.sh
 
-------------------------------
 **Windows**
-------------------------------
 Run:
 windows-run.bat
 
 Launchers automatically set up .venv and install missing dependencies.
 
-------------------------------
 **Data Storage**
-------------------------------
 history.json - Saved server list
 settings.json - Auto-refresh state
 stats.json - Compressed daily online history (RLE format)
